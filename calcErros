@@ -1,0 +1,44 @@
+class CalcController {
+
+    constructor(){
+        
+        this._displayCalc = "0"
+        this._currentDate;
+
+    }
+
+
+    initialize(){
+        let displayCalcEl = document.querySelector("#display")
+        let currentDateEl = document.querySelector("#text#data")
+        let currentTimeEl = document.querySelector("#text#hora")
+
+        const dateNow = new Date()
+        dateNow.getFullYear()
+        displayCalcEl.innerHTML = "123456"
+        currentDateEl.innerHTML = dateNow
+        dateNow.getHours()
+        currentTimeEl.innerHTML = dateNow
+    }
+
+
+    get displayCalc(){
+        return this._displaycalc
+
+    }
+
+    set displayCalc(value){
+        this._displaycalc = value
+    }
+
+    get currentDate(){
+        return this.currentDate
+    }
+
+    set currentDate(hour){
+        this._currentDate = hour
+    }
+        
+
+
+}
